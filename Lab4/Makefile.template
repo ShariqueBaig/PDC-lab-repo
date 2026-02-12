@@ -1,0 +1,77 @@
+# Generic Makefile for SIMD Examples
+# Copy this to each example directory and modify TARGET as needed
+
+# Compiler
+CXX = g++
+
+# Compiler flags
+# -std=c++17  : Use C++17 standard
+# -O3         : Maximum optimization
+# -mavx2      : Enable AVX2 SIMD instructions
+# -Wall       : Enable all warnings
+# -g          : Include debug symbols (optional, for debugging)
+CXXFLAGS = -std=c++17 -O3 -mavx2 -Wall
+
+# Optional: Add debug symbols for GDB debugging
+# Uncomment the line below to enable debugging
+# CXXFLAGS += -g
+
+# Target executable name (change this for each example)
+TARGET = main
+
+# Source files
+SOURCES = main.cpp
+
+# Object files (automatically generated from sources)
+OBJECTS = $(SOURCES:.cpp=.o)
+
+# Default target: build the executable
+all: $(TARGET)
+
+# Link object files to create executable
+$(TARGET): $(OBJECTS)
+	@echo "Linking $(TARGET)..."
+	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(TARGET)
+	@echo "✓ Build successful!"
+
+# Compile source files to object files
+%.o: %.cpp
+	@echo "Compiling $<..."
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Run the program
+run: $(TARGET)
+	@echo "Running $(TARGET)..."
+	@./$(TARGET)
+
+# Clean up compiled files
+clean:
+	@echo "Cleaning up..."
+	rm -f $(TARGET) $(OBJECTS)
+	@echo "✓ Clean complete!"
+
+# Rebuild from scratch
+rebuild: clean all
+
+# Show compiler version and flags
+info:
+	@echo "Compiler: $(CXX)"
+	@$(CXX) --version
+	@echo ""
+	@echo "Flags: $(CXXFLAGS)"
+	@echo ""
+	@echo "CPU Features:"
+	@lscpu | grep -i avx
+
+# Help target
+help:
+	@echo "Available targets:"
+	@echo "  make          - Build the executable (default)"
+	@echo "  make run      - Build and run the program"
+	@echo "  make clean    - Remove compiled files"
+	@echo "  make rebuild  - Clean and rebuild from scratch"
+	@echo "  make info     - Show compiler and CPU information"
+	@echo "  make help     - Show this help message"
+
+# Phony targets (not actual files)
+.PHONY: all clean run rebuild info help

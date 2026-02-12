@@ -1,0 +1,172 @@
+﻿[2026-02-12 12:45:18] [INFO] Starting cache simulation
+[2026-02-12 12:45:18] [INFO] Trace file: d:\Sharique\sem 6\PDC\CacheSimulator\build\traces\low_write_500k.txt
+[2026-02-12 12:45:18] [INFO] Processing trace file...
+[2026-02-12 12:45:18] [INFO] Processed 100000 memory accesses
+[2026-02-12 12:45:18] [INFO] Processed 200000 memory accesses
+[2026-02-12 12:45:19] [INFO] Processed 300000 memory accesses
+[2026-02-12 12:45:19] [INFO] Processed 400000 memory accesses
+[2026-02-12 12:45:19] [INFO] Processed 500000 memory accesses
+[2026-02-12 12:45:19] [INFO] Finished processing 500000 memory accesses in 946 ms
+Cache Simulation Results
+=======================
+Trace File: low_write_500k.txt
+Total Memory Accesses: 500000
+Processing Time: 946 ms
+Processing Rate: 528541 accesses/sec
+
+Memory Hierarchy Statistics
+===========================
+L1 Cache:
+Cache Statistics:
+----------------
+  Size: 32768 bytes
+  Associativity: 1-way
+  Block Size: 64 bytes
+  Number of Sets: 512
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Enabled
+  Stream Buffer Statistics:
+Stream Buffer Statistics:
+  Buffer Size: 2
+  Valid: Yes
+  Hits: 2
+  Accesses: 379093
+  Hit Rate: 0.000527575%
+
+Access Statistics:
+  Hits: 120907
+  Misses: 379093
+  Reads: 400142
+  Writes: 99858
+  Write-backs: 79939
+  Hit Ratio: 24.18%
+
+Miss Type Statistics:
+  Compulsory Misses: 507 (0.13%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 378586 (99.87%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	64131	0	0	
+Exclusive	64140	0	0	0	
+Shared	0	0	0	0	
+Invalid	106	406	0	0	
+
+L2 Cache:
+Cache Statistics:
+----------------
+  Size: 262144 bytes
+  Associativity: 8-way
+  Block Size: 64 bytes
+  Number of Sets: 512
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Enabled
+  Stream Buffer Statistics:
+Stream Buffer Statistics:
+  Buffer Size: 4
+  Valid: No
+  Hits: 0
+  Accesses: 364847
+  Hit Rate: 0.00%
+
+Access Statistics:
+  Hits: 475869
+  Misses: 364847
+  Reads: 684907
+  Writes: 155809
+  Write-backs: 73697
+  Hit Ratio: 56.60%
+
+Miss Type Statistics:
+  Compulsory Misses: 4096 (1.12%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 360751 (98.88%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	73697	0	0	
+Exclusive	74511	0	0	0	
+Shared	0	0	0	0	
+Invalid	0	4096	0	0	
+
+Overall Statistics:
+  Total Memory Accesses: 500000
+  Reads: 400142
+  Writes: 99858
+  L1 Misses: 379091
+  L1 Miss Rate: 75.82%
+  L2 Misses: 0
+  L2 Miss Rate: 43.40%
+
+Prefetching Statistics:
+  Useful Prefetches: 0
+  Useless Prefetches: 0
+  Prefetch Accuracy: 0.00%
+  Current Prefetch Distance: 1
+  Adaptive Prefetching: Enabled
+  Current Strategy: Adaptive
+
+Stride Predictor Statistics:
+Stride Predictor Statistics:
+  Table Size: 1024 entries
+  Correct Predictions: 29344
+  Total Predictions: 499984
+  Prediction Accuracy: 5.87%
+  Stride Histogram (top 10 strides):
+    Stride      0: 45247 occurrences
+    Stride   1024: 37894 occurrences
+    Stride   2048: 17284 occurrences
+    Stride   3072: 8436 occurrences
+    Stride   4096: 4366 occurrences
+    Stride   5120: 2350 occurrences
+    Stride   6144: 1175 occurrences
+    Stride   7168: 727 occurrences
+    Stride   8192: 412 occurrences
+    Stride   9216: 265 occurrences
+
+Memory Access Profile
+====================
+Memory Access Profiling Results
+===============================
+Total Accesses: 500000
+Read Accesses: 400142 (80.0%)
+Write Accesses: 99858 (20.0%)
+Unique Addresses: 244607
+Memory Footprint: 63998721 bytes
+Read/Write Ratio: 4.01
+Detected Access Pattern: Random
+
+Region Statistics:
+-----------------
+Region: Low Address Region (0-32KB)
+  Address Range: 0x0 - 0x7fff
+  Total Accesses: 128731 (25.7%)
+  Read Accesses: 103218
+  Write Accesses: 25513
+  Unique Addresses: 448
+  Read/Write Ratio: 4.05
+  Most Frequently Accessed: 0x1240 (25076 times)
+
+Region: High Address Region
+  Address Range: 0x8000 - 0x47fff
+  Total Accesses: 33075 (6.6%)
+  Read Accesses: 26435
+  Write Accesses: 6640
+  Unique Addresses: 4095
+  Read/Write Ratio: 3.98
+  Most Frequently Accessed: 0x2d180 (19 times)
+
+Region: unknown (addresses not in any defined region)
+  Total Accesses: 338194 (67.6%)
+  Read Accesses: 270489
+  Write Accesses: 67705
+  Unique Addresses: 240064
+  Most Frequently Accessed: 0xf0480 (25 times)
+

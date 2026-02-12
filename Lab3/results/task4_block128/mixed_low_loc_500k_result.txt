@@ -1,0 +1,88 @@
+﻿[2026-02-12 12:44:14] [INFO] Starting cache simulation
+[2026-02-12 12:44:14] [INFO] Trace file: d:\Sharique\sem 6\PDC\CacheSimulator\build\traces\mixed_low_loc_500k.txt
+[2026-02-12 12:44:14] [INFO] Processing trace file...
+[2026-02-12 12:44:14] [INFO] Processed 100000 memory accesses
+[2026-02-12 12:44:14] [INFO] Processed 200000 memory accesses
+[2026-02-12 12:44:14] [INFO] Processed 300000 memory accesses
+[2026-02-12 12:44:14] [INFO] Processed 400000 memory accesses
+[2026-02-12 12:44:15] [INFO] Processed 500000 memory accesses
+[2026-02-12 12:44:15] [INFO] Finished processing 500000 memory accesses in 690 ms
+Cache Simulation Results
+=======================
+Trace File: mixed_low_loc_500k.txt
+Total Memory Accesses: 500000
+Processing Time: 690 ms
+Processing Rate: 724638 accesses/sec
+
+Memory Hierarchy Statistics
+===========================
+L1 Cache:
+Cache Statistics:
+----------------
+  Size: 32768 bytes
+  Associativity: 1-way
+  Block Size: 128 bytes
+  Number of Sets: 256
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Disabled
+
+Access Statistics:
+  Hits: 136914
+  Misses: 363086
+  Reads: 349466
+  Writes: 150534
+  Write-backs: 116021
+  Hit Ratio: 27.38%
+
+Miss Type Statistics:
+  Compulsory Misses: 256 (0.07%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 362830 (99.93%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	81093	0	0	
+Exclusive	81089	0	0	0	
+Shared	0	0	0	0	
+Invalid	80	176	0	0	
+
+Overall Statistics:
+  Total Memory Accesses: 500000
+  Reads: 349466
+  Writes: 150534
+  L1 Misses: 363086
+  L1 Miss Rate: 72.62%
+
+Memory Access Profile
+====================
+Memory Access Profiling Results
+===============================
+Total Accesses: 500000
+Read Accesses: 349466 (69.9%)
+Write Accesses: 150534 (30.1%)
+Unique Addresses: 244635
+Memory Footprint: 63999873 bytes
+Read/Write Ratio: 2.32
+Detected Access Pattern: Random
+
+Region Statistics:
+-----------------
+Region: Low Address Region (0-32KB)
+  Address Range: 0x0 - 0x7fff
+  Total Accesses: 128706 (25.7%)
+  Read Accesses: 89941
+  Write Accesses: 38765
+  Unique Addresses: 448
+  Read/Write Ratio: 2.32
+  Most Frequently Accessed: 0x11c0 (25095 times)
+
+Region: unknown (addresses not in any defined region)
+  Total Accesses: 371294 (74.3%)
+  Read Accesses: 259525
+  Write Accesses: 111769
+  Unique Addresses: 244187
+  Most Frequently Accessed: 0xfd1c0 (21 times)
+

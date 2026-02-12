@@ -1,0 +1,16 @@
+{
+    "l1": {
+        "size": 32768,
+        "associativity": 1,
+        "blockSize": 64,
+        "replacementPolicy": "LRU",
+        "writePolicy": "WriteBack"
+    },
+    "l2": {
+        "size": 262144,
+        "associativity": 16,
+        "blockSize": 64,
+        "replacementPolicy": "PLRU",
+        "writePolicy": "WriteBack"
+    }
+}

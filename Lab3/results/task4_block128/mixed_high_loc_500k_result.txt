@@ -1,0 +1,88 @@
+﻿[2026-02-12 12:44:13] [INFO] Starting cache simulation
+[2026-02-12 12:44:13] [INFO] Trace file: d:\Sharique\sem 6\PDC\CacheSimulator\build\traces\mixed_high_loc_500k.txt
+[2026-02-12 12:44:13] [INFO] Processing trace file...
+[2026-02-12 12:44:13] [INFO] Processed 100000 memory accesses
+[2026-02-12 12:44:13] [INFO] Processed 200000 memory accesses
+[2026-02-12 12:44:13] [INFO] Processed 300000 memory accesses
+[2026-02-12 12:44:14] [INFO] Processed 400000 memory accesses
+[2026-02-12 12:44:14] [INFO] Processed 500000 memory accesses
+[2026-02-12 12:44:14] [INFO] Finished processing 500000 memory accesses in 681 ms
+Cache Simulation Results
+=======================
+Trace File: mixed_high_loc_500k.txt
+Total Memory Accesses: 500000
+Processing Time: 681 ms
+Processing Rate: 734214 accesses/sec
+
+Memory Hierarchy Statistics
+===========================
+L1 Cache:
+Cache Statistics:
+----------------
+  Size: 32768 bytes
+  Associativity: 1-way
+  Block Size: 128 bytes
+  Number of Sets: 256
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Disabled
+
+Access Statistics:
+  Hits: 136068
+  Misses: 363932
+  Reads: 349812
+  Writes: 150188
+  Write-backs: 116744
+  Hit Ratio: 27.21%
+
+Miss Type Statistics:
+  Compulsory Misses: 256 (0.07%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 363676 (99.93%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	81322	0	0	
+Exclusive	81334	0	0	0	
+Shared	0	0	0	0	
+Invalid	59	197	0	0	
+
+Overall Statistics:
+  Total Memory Accesses: 500000
+  Reads: 349812
+  Writes: 150188
+  L1 Misses: 363932
+  L1 Miss Rate: 72.79%
+
+Memory Access Profile
+====================
+Memory Access Profiling Results
+===============================
+Total Accesses: 500000
+Read Accesses: 349812 (70.0%)
+Write Accesses: 150188 (30.0%)
+Unique Addresses: 244747
+Memory Footprint: 63999745 bytes
+Read/Write Ratio: 2.33
+Detected Access Pattern: Random
+
+Region Statistics:
+-----------------
+Region: Low Address Region (0-32KB)
+  Address Range: 0x0 - 0x7fff
+  Total Accesses: 128806 (25.8%)
+  Read Accesses: 90309
+  Write Accesses: 38497
+  Unique Addresses: 448
+  Read/Write Ratio: 2.35
+  Most Frequently Accessed: 0x11c0 (25078 times)
+
+Region: unknown (addresses not in any defined region)
+  Total Accesses: 371194 (74.2%)
+  Read Accesses: 259503
+  Write Accesses: 111691
+  Unique Addresses: 244299
+  Most Frequently Accessed: 0xaaf80 (21 times)
+

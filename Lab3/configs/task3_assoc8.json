@@ -1,0 +1,9 @@
+{
+    "l1": {
+        "size": 32768,
+        "associativity": 8,
+        "blockSize": 64,
+        "replacementPolicy": "LRU",
+        "writePolicy": "WriteBack"
+    }
+}

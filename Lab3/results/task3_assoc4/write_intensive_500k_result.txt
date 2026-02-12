@@ -1,0 +1,88 @@
+﻿[2026-02-12 12:44:01] [INFO] Starting cache simulation
+[2026-02-12 12:44:01] [INFO] Trace file: d:\Sharique\sem 6\PDC\CacheSimulator\build\traces\write_intensive_500k.txt
+[2026-02-12 12:44:01] [INFO] Processing trace file...
+[2026-02-12 12:44:01] [INFO] Processed 100000 memory accesses
+[2026-02-12 12:44:01] [INFO] Processed 200000 memory accesses
+[2026-02-12 12:44:01] [INFO] Processed 300000 memory accesses
+[2026-02-12 12:44:01] [INFO] Processed 400000 memory accesses
+[2026-02-12 12:44:02] [INFO] Processed 500000 memory accesses
+[2026-02-12 12:44:02] [INFO] Finished processing 500000 memory accesses in 833 ms
+Cache Simulation Results
+=======================
+Trace File: write_intensive_500k.txt
+Total Memory Accesses: 500000
+Processing Time: 833 ms
+Processing Rate: 600240 accesses/sec
+
+Memory Hierarchy Statistics
+===========================
+L1 Cache:
+Cache Statistics:
+----------------
+  Size: 32768 bytes
+  Associativity: 4-way
+  Block Size: 64 bytes
+  Number of Sets: 128
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Disabled
+
+Access Statistics:
+  Hits: 126409
+  Misses: 373591
+  Reads: 100136
+  Writes: 399864
+  Write-backs: 298835
+  Hit Ratio: 25.28%
+
+Miss Type Statistics:
+  Compulsory Misses: 512 (0.14%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 373079 (99.86%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	59722	0	0	
+Exclusive	59710	0	0	0	
+Shared	0	0	0	0	
+Invalid	424	88	0	0	
+
+Overall Statistics:
+  Total Memory Accesses: 500000
+  Reads: 100136
+  Writes: 399864
+  L1 Misses: 373591
+  L1 Miss Rate: 74.72%
+
+Memory Access Profile
+====================
+Memory Access Profiling Results
+===============================
+Total Accesses: 500000
+Read Accesses: 100136 (20.0%)
+Write Accesses: 399864 (80.0%)
+Unique Addresses: 245428
+Memory Footprint: 63998593 bytes
+Read/Write Ratio: 0.25
+Detected Access Pattern: Random
+
+Region Statistics:
+-----------------
+Region: Low Address Region (0-32KB)
+  Address Range: 0x0 - 0x7fff
+  Total Accesses: 128477 (25.7%)
+  Read Accesses: 25939
+  Write Accesses: 102538
+  Unique Addresses: 448
+  Read/Write Ratio: 0.25
+  Most Frequently Accessed: 0x1180 (12631 times)
+
+Region: unknown (addresses not in any defined region)
+  Total Accesses: 371523 (74.3%)
+  Read Accesses: 74197
+  Write Accesses: 297326
+  Unique Addresses: 244980
+  Most Frequently Accessed: 0x86080 (22 times)
+

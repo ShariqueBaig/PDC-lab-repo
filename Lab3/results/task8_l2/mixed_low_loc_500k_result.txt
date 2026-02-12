@@ -1,0 +1,132 @@
+﻿[2026-02-12 12:45:08] [INFO] Starting cache simulation
+[2026-02-12 12:45:08] [INFO] Trace file: d:\Sharique\sem 6\PDC\CacheSimulator\build\traces\mixed_low_loc_500k.txt
+[2026-02-12 12:45:08] [INFO] Processing trace file...
+[2026-02-12 12:45:08] [INFO] Processed 100000 memory accesses
+[2026-02-12 12:45:08] [INFO] Processed 200000 memory accesses
+[2026-02-12 12:45:08] [INFO] Processed 300000 memory accesses
+[2026-02-12 12:45:08] [INFO] Processed 400000 memory accesses
+[2026-02-12 12:45:09] [INFO] Processed 500000 memory accesses
+[2026-02-12 12:45:09] [INFO] Finished processing 500000 memory accesses in 935 ms
+Cache Simulation Results
+=======================
+Trace File: mixed_low_loc_500k.txt
+Total Memory Accesses: 500000
+Processing Time: 935 ms
+Processing Rate: 534759 accesses/sec
+
+Memory Hierarchy Statistics
+===========================
+L1 Cache:
+Cache Statistics:
+----------------
+  Size: 32768 bytes
+  Associativity: 1-way
+  Block Size: 64 bytes
+  Number of Sets: 512
+  Replacement Policy: LRU
+  Write Policy: Write-back
+  Prefetching: Disabled
+
+Access Statistics:
+  Hits: 120988
+  Misses: 379012
+  Reads: 349466
+  Writes: 150534
+  Write-backs: 117655
+  Hit Ratio: 24.20%
+
+Miss Type Statistics:
+  Compulsory Misses: 512 (0.14%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 378500 (99.86%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	82221	0	0	
+Exclusive	82218	0	0	0	
+Shared	0	0	0	0	
+Invalid	161	351	0	0	
+
+L2 Cache:
+Cache Statistics:
+----------------
+  Size: 262144 bytes
+  Associativity: 16-way
+  Block Size: 64 bytes
+  Number of Sets: 256
+  Replacement Policy: PLRU
+  Write Policy: Write-back
+  Prefetching: Disabled
+
+Access Statistics:
+  Hits: 444622
+  Misses: 431057
+  Reads: 643902
+  Writes: 231777
+  Write-backs: 173869
+  Hit Ratio: 50.77%
+
+Miss Type Statistics:
+  Compulsory Misses: 4096 (0.95%)
+  Capacity Misses: 0 (0.00%)
+  Conflict Misses: 426961 (99.05%)
+  Coherence Misses: 0 (0.00%)
+
+MESI Protocol Statistics:
+MESI Protocol State Transitions:
+From\To  Modified	Exclusive	Shared	Invalid	
+Modified	0	155500	0	0	
+Exclusive	156782	0	0	0	
+Shared	0	0	0	0	
+Invalid	0	4096	0	0	
+
+Overall Statistics:
+  Total Memory Accesses: 500000
+  Reads: 349466
+  Writes: 150534
+  L1 Misses: 379012
+  L1 Miss Rate: 75.80%
+  L2 Misses: 0
+  L2 Miss Rate: 49.23%
+
+Memory Access Profile
+====================
+Memory Access Profiling Results
+===============================
+Total Accesses: 500000
+Read Accesses: 349466 (69.9%)
+Write Accesses: 150534 (30.1%)
+Unique Addresses: 244635
+Memory Footprint: 63999873 bytes
+Read/Write Ratio: 2.32
+Detected Access Pattern: Random
+
+Region Statistics:
+-----------------
+Region: Low Address Region (0-32KB)
+  Address Range: 0x0 - 0x7fff
+  Total Accesses: 128706 (25.7%)
+  Read Accesses: 89941
+  Write Accesses: 38765
+  Unique Addresses: 448
+  Read/Write Ratio: 2.32
+  Most Frequently Accessed: 0x11c0 (25095 times)
+
+Region: High Address Region
+  Address Range: 0x8000 - 0x47fff
+  Total Accesses: 33073 (6.6%)
+  Read Accesses: 23113
+  Write Accesses: 9960
+  Unique Addresses: 4094
+  Read/Write Ratio: 2.32
+  Most Frequently Accessed: 0x22ec0 (19 times)
+
+Region: unknown (addresses not in any defined region)
+  Total Accesses: 338221 (67.6%)
+  Read Accesses: 236412
+  Write Accesses: 101809
+  Unique Addresses: 240093
+  Most Frequently Accessed: 0xfd1c0 (21 times)
+
