@@ -1,0 +1,11 @@
+component,count,scalar_total_us,simd_total_us,speedup,time_saved_us,contribution_pct
+rmsnorm,2,18.9,4,4.725,14.9,1.06634
+qkv_projections,1,733.2,233.7,3.13736,499.5,35.7475
+attention_scores,1,32.6,16.4,1.9878,16.2,1.15938
+context_projection,1,36.2,25.4,1.4252,10.8,0.772919
+output_projection,1,245.7,80.8,3.04084,164.9,11.8013
+ffn_expand,1,487.4,158.2,3.08091,329.2,23.5597
+activation,1,14.9,1.6,9.3125,13.3,0.951836
+ffn_contract,1,484.3,138.4,3.49928,345.9,24.7549
+others,1,111.8,109.2,1.02381,2.6,0.186073
+overall,1,2165,767.7,2.82011,1397.3,100
