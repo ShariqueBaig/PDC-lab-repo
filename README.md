@@ -1,12 +1,17 @@
 # Parallel and Distributed Computing (PDC) Labs
+### By Sharique Baig
 
-This repository contains a collection of labs completed as part of the Parallel and Distributed Computing (PDC) course. The labs focus on implementing and optimizing parallel algorithms, understanding computer architecture, and leveraging hardware capabilities for performance.
+Welcome to the collection of PDC labs completed by **Sharique Baig**. This repository showcases implementations and performance analysis in the field of parallel and distributed computing.
 
 ## Introduction
 
-Parallel and Distributed Computing is a fundamental area of computer science that focuses on the simultaneous execution of multiple calculations or processes. This course covers topics such as multi-threading, synchronization, SIMD (Single Instruction, Multiple Data) programming, and cache optimization.
+Parallel and Distributed Computing (PDC) is a critical area of computer science focused on executing multiple calculations or processes simultaneously. This course explores advanced topics including:
+- **Multi-threading & Synchronization**
+- **SIMD (Single Instruction, Multiple Data) Optimization**
+- **Cache Simulation and Memory Hierarchy Analysis**
+- **Performance Profiling and Vectorization**
 
-**Author:** Sharique Baig
+The labs in this repository demonstrate practical applications of these concepts to improve software performance on modern hardware.
 
 ---
 
