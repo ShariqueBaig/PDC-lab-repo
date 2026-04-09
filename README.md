@@ -1,40 +1,60 @@
 # Parallel and Distributed Computing (PDC) Labs
 ### By Sharique Baig
 
-Welcome to the collection of PDC labs completed by **Sharique Baig**. This repository showcases implementations and performance analysis in the field of parallel and distributed computing.
-
-## Introduction
-
-Parallel and Distributed Computing (PDC) is a critical area of computer science focused on executing multiple calculations or processes simultaneously. This course explores advanced topics including:
-- **Multi-threading & Synchronization**
-- **SIMD (Single Instruction, Multiple Data) Optimization**
-- **Cache Simulation and Memory Hierarchy Analysis**
-- **Performance Profiling and Vectorization**
-
-The labs in this repository demonstrate practical applications of these concepts to improve software performance on modern hardware.
+Welcome to the collection of Parallel and Distributed Computing (PDC) labs completed by **Sharique Baig**. This repository showcases implementations, performance analysis, and theoretical explorations across various parallel programming paradigms and architectures.
 
 ---
 
-## Lab Contents
+## 🚀 Introduction
 
-### [Lab 3: Cache Simulation](Lab3/)
-- **Description:** This lab involves simulating and analyzing cache behavior to understand the impact of cache hits, misses, and memory hierarchy on program performance.
-- **Key Concepts:** Cache mapping, replacement policies, and memory access patterns.
-
-### [Lab 4: SIMD Programming](Lab4/)
-- **Description:** Focuses on Single Instruction, Multiple Data (SIMD) techniques to optimize code for modern processors. It includes examples of vectorization and performance comparison.
-- **Key Concepts:** Intel Intrinsics, AVX2, loop vectorization, and performance profiling.
+Parallel and Distributed Computing (PDC) is essential for modern high-performance software. This repository documents a journey through:
+- **Shared Memory Programming**: Multi-threading, Synchronization, and OpenMP.
+- **Hardware Acceleration**: SIMD Vectorization, GPGPU (OpenCL/CUDA).
+- **Architecture Analysis**: Cache Simulation and Memory Hierarchy.
+- **Distributed Systems**: Inter-Process Communication (IPC).
 
 ---
 
-## How to Run
+## 📂 Repository Structure
 
-Instructions for compiling and running the labs:
-1. Navigate to the specific lab directory.
-2. Follow the build instructions (e.g., using `make` or `cmake`).
-3. Run the generated executables to see the results.
+### 🧪 Labs
+| Lab | Topic | Key Technologies |
+|:---:|:---|:---|
+| [**Lab 2**](Lab2/) | Multi-threading & Threads | Python (Jupyter) |
+| [**Lab 3**](Lab3/) | Cache Simulation | C++, JSON, PowerShell |
+| [**Lab 4**](Lab4/) | SIMD Programming | Intel Intrinsics (AVX2), C |
+| [**Lab 5**](Lab5/) | Parallel Skeletons | Python (Map, Reduce, Scan) |
+| [**Lab 6**](Lab6/) | OpenMP Programming | C, Open MP Pragmas |
+| [**Lab 7**](Lab7/) | GPGPU Programming | GPU Acceleration, Reaction-Diffusion |
+| [**Lab 8**](Lab8/) | CUDA Programming | NVIDIA CUDA, Kernels |
+| [**Lab 9**](Lab9/) | Inter-Process Communication | Pipes, FIFOs, Sockets, Shared Memory |
+
+### 📚 Learning Resources
+*   [**Study Guides**](Study_Guides/): A comprehensive collection of study guides covering PRAM models, Parallel Skeletons, OpenMP, SIMD, and exam design frameworks.
 
 ---
 
-## Attribution
-All work in this repository was completed by **Sharique Baig**.
+## 🛠️ How to Run
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/ShariqueBaig/PDC-lab-repo.git
+    cd PDC-lab-repo
+    ```
+2.  **Navigate to a Lab**: Each lab folder contains its own `README.md` with specific build and execution instructions.
+3.  **Requirements**:
+    *   **C/C++ Labs**: Require a C compiler (GCC/Clang/MSVC) and OpenMP capability for Lab 6.
+    *   **Python Labs**: Require Python 3.x and optionally Jupyter Notebook for `.ipynb` files.
+    *   **CUDA Labs**: Require an NVIDIA GPU and CUDA Toolkit.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Attribution
+
+All implementations and reports in this repository were completed by **Sharique Baig**.

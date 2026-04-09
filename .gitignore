@@ -1,0 +1,34 @@
+# Compiled binaries
+*.exe
+*.o
+*.obj
+*.out
+*.so
+*.a
+*.lib
+*.dll
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build directories
+build/
+bin/
+obj/
